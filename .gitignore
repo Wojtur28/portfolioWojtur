@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/dist-server
 
 # Node
 /node_modules
@@ -19,6 +20,7 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+/.idea
 
 # Visual Studio Code
 .vscode/*
@@ -36,6 +38,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/.sass-cache
 
 # System files
 .DS_Store
