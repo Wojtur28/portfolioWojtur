@@ -1,28 +1,23 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" mode="over">
-    <button mat-button routerLink="/" (click)="drawer.close()">Home</button>
-    <button mat-button routerLink="/projects" (click)="drawer.close()">Projects</button>
-    <button mat-button routerLink="/about" (click)="drawer.close()">About</button>
-    <button mat-button routerLink="/contact" (click)="drawer.close()">Contact</button>
+    <button mat-button (click)="scrollToSection('home'); drawer.close()">Home</button>
+    <button mat-button (click)="scrollToSection('projects'); drawer.close()">Projects</button>
+    <button mat-button (click)="scrollToSection('about'); drawer.close()">About</button>
+    <button mat-button (click)="scrollToSection('contact'); drawer.close()">Contact</button>
   </mat-sidenav>
 
   <mat-toolbar color="primary">
     <button mat-icon-button (click)="drawer.toggle()" class="menu-button">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="app-title">Wojtur - Portfolio</span>
+    <span class="app-title">Wojtur</span>
     <span class="spacer"></span>
 
     <div class="nav-buttons">
-      <button mat-button routerLink="/" routerLinkActive="active-link">Home</button>
-      <button mat-button routerLink="/projects" routerLinkActive="active-link">Projects</button>
-      <button mat-button routerLink="/about" routerLinkActive="active-link">About</button>
-      <button mat-button routerLink="/contact" routerLinkActive="active-link">Contact</button>
+      <button mat-button (click)="scrollToSection('home')">Home</button>
+      <button mat-button (click)="scrollToSection('projects')">Projects</button>
+      <button mat-button (click)="scrollToSection('about')">About</button>
+      <button mat-button (click)="scrollToSection('contact')">Contact</button>
     </div>
   </mat-toolbar>
 </mat-sidenav-container>
-
-  <div class="content">
-    <router-outlet></router-outlet>
-  </div>
-

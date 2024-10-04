@@ -24,4 +24,10 @@ import {MatSidenav, MatSidenavContainer} from '@angular/material/sidenav';
 })
 export class NavbarComponent {
 
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
