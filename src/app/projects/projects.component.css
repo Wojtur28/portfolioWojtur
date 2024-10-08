@@ -1,18 +1,26 @@
 .section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.workout-tracker {
+.project-card {
+  width: 90%;
   max-width: 400px;
-  color:white;
-  margin: 1em ;
+  color: white;
+  margin: 1em;
 }
 
-.portfolio {
-  max-width: 400px;
-  color:white;
-  margin: 1em ;
+@media (min-width: 769px) {
+  .section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 35vw;
+    max-width: 400px;
+    height: 40vw;
+  }
 }
-
-
-

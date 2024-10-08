@@ -1,0 +1,40 @@
+.section {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.description {
+  margin: 2em;
+  border: solid black 2px;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.background {
+  width: 60vw;
+  height: 20%;
+}
+
+.logos {
+  margin: 1em;
+
+}
+
+.logo {
+  width: 8vw;
+  height: 8vw;
+  margin: 1em;
+  border: solid;
+  border-radius: 1em;
+  padding: 0.5vw;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Light up with shadow */
+  transform: scale(1.1); /* Slightly increase the size */
+  filter: brightness(1.2); /* Increase brightness */
+}
+
+
