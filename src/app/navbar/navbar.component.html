@@ -1,23 +1,21 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" mode="over">
-    <button mat-button (click)="scrollToSection('home'); drawer.close()">Home</button>
-    <button mat-button (click)="scrollToSection('projects'); drawer.close()">Projects</button>
-    <button mat-button (click)="scrollToSection('about'); drawer.close()">About</button>
-    <button mat-button (click)="scrollToSection('contact'); drawer.close()">Contact</button>
+    <button mat-button (click)="scrollToSection('about'); drawer.close()">O mnie</button>
+    <button mat-button (click)="scrollToSection('projects'); drawer.close()">Projekty</button>
+    <button mat-button (click)="scrollToSection('contact'); drawer.close()">Kontakt</button>
   </mat-sidenav>
 
-  <mat-toolbar color="primary">
+  <mat-toolbar>
     <button mat-icon-button (click)="drawer.toggle()" class="menu-button">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="app-title">Wojtur</span>
+    <span class="app-title">Portfolio</span>
     <span class="spacer"></span>
 
     <div class="nav-buttons">
-      <button mat-button (click)="scrollToSection('home')">Home</button>
-      <button mat-button (click)="scrollToSection('projects')">Projects</button>
-      <button mat-button (click)="scrollToSection('about')">About</button>
-      <button mat-button (click)="scrollToSection('contact')">Contact</button>
+      <button mat-button (click)="scrollToSection('about')">O mnie</button>
+      <button mat-button (click)="scrollToSection('projects')">Projekty</button>
+      <button mat-button (click)="scrollToSection('contact')">Kontakt</button>
     </div>
   </mat-toolbar>
 </mat-sidenav-container>

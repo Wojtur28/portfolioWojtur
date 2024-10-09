@@ -3,24 +3,38 @@
 }
 
 .nav-buttons {
-  display: flex;
-  gap: 10px;
+  display: none;
 }
 
-@media (max-width: 768px) {
-  .nav-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
+.mat-mdc-button:not(:disabled) {
+  color: white;
+}
 
-  .nav-buttons {
-    display: none;
-  }
+.menu-button {
+  display: inline-flex;
+}
 
+.sidenav-container {
+  min-height: 5vh;
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 56px;
 }
 
 @media (min-width: 769px) {
+  .main-content {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
   .menu-button {
     display: none;
   }
