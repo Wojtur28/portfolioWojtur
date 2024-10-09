@@ -16,6 +16,7 @@
 
 .sidenav-container {
   min-height: 5vh;
+  width: 100%;
 }
 
 .main-content {
