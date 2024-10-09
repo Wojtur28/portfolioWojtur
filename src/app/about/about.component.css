@@ -2,6 +2,7 @@
   height: 60%;
   width: 100%;
   display: flex;
+  align-items: stretch;
 }
 
 .description {
@@ -9,32 +10,70 @@
   border: solid black 2px;
   border-radius: 2em;
   padding: 1em;
+  text-align: justify;
 }
 
-.background {
-  width: 60vw;
-  height: 20%;
+.technologies {
+  margin: 2em;
+
 }
 
 .logos {
-  margin: 1em;
-
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  flex: 1;
 }
 
 .logo {
-  width: 8vw;
-  height: 8vw;
-  margin: 1em;
+  width: 20vw;
+  height: 20vw;
+  margin: 0.5em;
   border: solid;
   border-radius: 1em;
   padding: 0.5vw;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
 .logo:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Light up with shadow */
-  transform: scale(1.1); /* Slightly increase the size */
-  filter: brightness(1.2); /* Increase brightness */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
+@media (min-width: 768px) {
+  .logo {
+    width: 15vw;
+    height: 15vw;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    display: flow;
+  }
+  .logos {
+    margin-left: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    display: flow;
+  }
+  .logos {
+    margin-left: 1.5em;
+
+  }
+  .logo {
+    width: 11vw;
+    height: 11vw;
+  }
+}
 
