@@ -1,3 +1,8 @@
+mat-toolbar {
+  /*background-color: #3A5154;*/
+  background-color: #B7673C;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -14,7 +19,7 @@
   display: inline-flex;
 }
 
-.sidenav-container {
+mat-sidenav-container {
   min-height: 5vh;
   width: 100%;
 }
